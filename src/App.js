@@ -11,6 +11,7 @@ import JobSeekerProfile from "./pages/JobSeekerProfile";
 import EmployerProfile from "./pages/EmployerProfile";
 import PrivateRoute from "./components/PrivateRoute";
 
+
 function App() {
     const user = JSON.parse(localStorage.getItem("user"));
 

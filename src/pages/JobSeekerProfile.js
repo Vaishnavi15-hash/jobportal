@@ -6,11 +6,13 @@ const JobSeekerProfile = () => {
     if (!user) return <p>Please log in to view profile.</p>;
 
     return (
-        <div>
+        <div className="jobseeker-profile">
             <h2>Job Seeker Profile</h2>
-            <p><strong>Username:</strong> {user.username}</p>
-            <p><strong>Email:</strong> {user.email}</p>
-            <p><strong>Role:</strong> {user.role}</p>
+            <div className="profile-info">
+                <p><strong>Username:</strong> {user.username}</p>
+                <p><strong>Email:</strong> {user.email}</p>
+                <p><strong>Role:</strong> {user.role}</p>
+            </div>
         </div>
     );
 };
